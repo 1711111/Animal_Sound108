@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Sound App</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+        <nav id="title" class="navbar col-xs-12 col-md-5 col-lg-4" id="header_div">
+            <h2 style="color: rgb(50, 121, 66); background-color: white;"><b>Sound Conrolled Animals</b></h2>
+        </nav>
+        <br><br><br>
+        <div id="main_div">
+            <p style="font-size: 20px;">Click on this button to start detecting the animals</p>
+            <button id="btstart" onclick="startClassifier()" class="btn btn-info">Click To Start</button>
+            <br>
+            <h3 id="Audioclass"></h3><h4 id="Animalnumber"></h4>
+            <br>
+            <img id="Defaultgif" src="LoadingEar.gif" style="max-width: 200px; max-height: 200px;">
+        </div> 
+        <div class="copy_right_footer">
+            Developed by - Ayush
+           </div>
+        </center>  
+        <script src="main.js"></script>
+    </body>
+</html>
